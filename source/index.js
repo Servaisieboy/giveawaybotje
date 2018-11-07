@@ -27,8 +27,8 @@ new class extends Client {
         this.on('ready', () => {
             console.log(`Client connected with ${this.guilds.size} guilds, ${this.channels.size} channels, and ${this.users.size} users.`);
 
-            this.user.setActivity(`${this.config.prefix}help | ${this.guilds.size} Guilds`);
-            setInterval(() => this.user.setActivity(`${this.config.prefix}help | ${this.guilds.size} Guilds`), 1000 * 60 * 2);
+            this.user.setActivity(`🎅 SandwichGlobal - .help`);
+            setInterval(() => this.user.setActivity(`🎅 SandwichGlobal - .help`), 1000 * 60 * 2);
 
             if (cache.length) cache.forEach(g => new Giveaway(this, null, g.match, g));
             this.clearCache();
