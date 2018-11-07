@@ -36,9 +36,9 @@ class Giveaway {
     async init() {
         this.msg = await this.channel.buildEmbed()
             .setColor(0xcc8822)
-            .setTitle(this.title)
-            .setDescription(`Possible Winners: ${this.winnerCount}\nReact with :tada: to enter!`)
-            .setFooter(`${this.suffix} | Ends at`)
+            .setTitle(`🎉 **GIVEAWAY** 🎉`)
+            .setDescription(`**Prijs:** ${this.title}\nReageer met :tada: om mee te doen!`)
+            .setFooter(`Aantal winnaars: ${this.winnerCount} | Eindigt op:`)
             .setTimestamp(new Date(this.endTime))
             .send();
 
